@@ -44,7 +44,7 @@ pipeline {
         stage("Step 5: Upload Artifact to Nexus"){
             steps {
                 script{
-                    nexusPublisher nexusInstanceId: 'nexus4',
+                    nexusPublisher nexusInstanceId: 'nexus_lab4',
                         nexusRepositoryId: 'Repo_lab_mod4',
                         packages: [
                             [$class: 'MavenPackage',
